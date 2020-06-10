@@ -1,4 +1,4 @@
-# React Product catalog
+# React ProductCard catalog
 - Replace `<your_account>` with your Github username in the [DEMO LINK](https://<your_account>.github.io/react_phone-catalog/)
 - Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
 
@@ -50,7 +50,7 @@ Store the Cart in the `localStorage`
 ### Phones page
 1. Create `PhonesPage` available at `/phones` with just a title `Mobile phones`
     - Create `getPhones` API call fetching the products with the `type`: `phone`
-1. Add `ProductsList` showing all the `phones`
+1. Add `Index` showing all the `phones`
 1. Implement a `Loader` to show it while waiting for the data from server
 1. Add ability to sort the products by `age` (`Newest`), `name` (`Alphabetically`) and `price` (`Cheapest`)
     - (*) save sort order in the URL `?sort=age` and apply it after the page reload
@@ -67,13 +67,13 @@ Store the Cart in the `localStorage`
     - Create `getAccessories` method fetching the products with `type`: `accessory`
     - Implement `NoResults` component displayed if there are no products available
 
-### Product details page
+### ProductCard details page
 1. Create `ProductDetailsPage` available at `/product/:productId`
     - `ProductCard` should be a link to the details page
 1. Fetch phone details from API taking the `phoneId` from the URL
     - Use `Loader` when fetching the details
 1. Show the details on the page
-    - Hide `Available colors` and `Select capacity` for now
+    - Hide `Available colors` and `Index capacity` for now
     - `About` section should contain just a description (without any subheaders)
     - Choose `Tech specs` you want to show
 1. Add ability to choose a picture
@@ -98,7 +98,7 @@ Store the Cart in the `localStorage`
 1. (*) Save the `Cart` to the `localSotrage` on each change and read it on page load
 
 ### Favorites
-1. Create `FavoritesPage` it should show the `ProductsList` with all the favorite products
+1. Create `FavoritesPage` it should show the `Index` with all the favorite products
 1. Add ability to add/remove favorite products by pressing a hart
 1. (*) Show the favorites count near the `Favorites` icon in the header
 
@@ -113,4 +113,4 @@ Store the Cart in the `localStorage`
 
 ### Other tasks
 1. Add `NotFoundPage` for all the other URLs with the link to `HomePage`
-1. Implement `Product was not found` state for the `PhoneDetailsPage` if there is no phone with a given `phoneId` on the server
+1. Implement `ProductCard was not found` state for the `PhoneDetailsPage` if there is no phone with a given `phoneId` on the server
